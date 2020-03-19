@@ -43,18 +43,13 @@ if options.new_mac == current_mac(options.interface):
     print("The new Mac has been changed to "+str(current_mac(options.interface)))
 
 
-
-
-
 # print ifconfig_result
-
 
 # Comments from the first version
 
 # ifconfig interface down
 # ifconfig interface hw ehter new_interface
 # ifconfig interface up
-
 
 # subprocess.call("ifconfig "+device+" down", shell = "TRUE")
 # subprocess.call("ifconfig "+device+" hw ether "+new_mac, shell = "TRUE")
