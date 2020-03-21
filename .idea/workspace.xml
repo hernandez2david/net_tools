@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4379f4-b0a9-4a13-b8a3-1ee634944b2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network_scanner/network_scaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/network_scanner/network_scaner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,5 +36,15 @@
       <updated>1584584672246</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="193" y="27" width="1012" height="636" key="SettingsEditor" timestamp="1584757238969">
+      <screen x="42" y="27" width="1324" height="636" />
+    </state>
+    <state x="193" y="27" width="1012" height="636" key="SettingsEditor/42.27.1324.636@42.27.1324.636" timestamp="1584757238969" />
+    <state x="364" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1584746328013">
+      <screen x="42" y="27" width="1324" height="636" />
+    </state>
+    <state x="364" y="172" key="com.intellij.ide.util.TipDialog/42.27.1324.636@42.27.1324.636" timestamp="1584746328013" />
   </component>
 </project>
