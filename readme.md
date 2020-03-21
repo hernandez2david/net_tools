@@ -1,1 +1,8 @@
-THis is the material coded during the course Kali and python for ethical hacking in 2020
+<head>This is a head</head>
+
+Kali and Linux ethical hacking course Materials
+
+mac changer -- OS:Kali
+Changes the mac address on the device
+Network Scanner -- OS Kali
+Used to scan the list of mac addresses and IPs of devices connected to the subnetwork given
