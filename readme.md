@@ -1,5 +1,3 @@
-<head>This is a head</head>
-
 Kali and Linux ethical hacking course Materials
 
 mac changer -- OS:Kali
