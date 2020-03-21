@@ -1,0 +1,12 @@
+
+# print ifconfig_result
+
+# Comments from the first version
+
+# ifconfig interface down
+# ifconfig interface hw ehter new_interface
+# ifconfig interface up
+
+# subprocess.call("ifconfig "+device+" down", shell = "TRUE")
+# subprocess.call("ifconfig "+device+" hw ether "+new_mac, shell = "TRUE")
+# subprocess.call("ifconfig "+device+" up", shell = "TRUE")

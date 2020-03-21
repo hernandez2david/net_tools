@@ -21,18 +21,7 @@ def scan(ip):
         client_list.append(client_dict)
 
     return client_list
-    # print(element[1].show())\
-    #answered,unanswered = scapy.srp(ethernet_frame,timeout = 1)
-    #answered.show()
-    # arp_request.show()
-    #print(ethernet_frame.summary())
-    #ethernet_frame.show()
-    #scapy.ls(scapy.Ether())
-    #print(broadcast.summary())
-    #scapy.ls(scapy.ARP)
-    #print(arp_request.summary())
-    #print(arp_request.summary())
-    #arp_request.show()
+    
 
 def print_scanned(client_list):
     print("IP\t\t\t\t\tMAC\n" + ("="*60))
