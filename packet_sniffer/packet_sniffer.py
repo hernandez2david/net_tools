@@ -2,7 +2,7 @@
 import scapy.all as scapy
 from scapy.layers import http
 from termcolor import colored
-
+import optparse
 def packet_sniffer(interface):
     scapy.sniff(iface = interface, store = False, prn = process_sniffed_packages)
     #Receives the Iface, and invokes the method process_sniffed_packages
@@ -27,5 +27,16 @@ def process_sniffed_packages(packet):
         if login_info:
             print colored("Possible password found : " + login_info, 'white', 'on_red')
 
+def arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-i", "--interface", dest="interface", help="Select the interface to sniff")
+    (options, arguments) = parser.parse_args()
+    if not options.interface:
+        parser.error("[+] Please specify an interface")
+    else:
+        return options
 
-packet_sniffer("eth0")
+options = arguments()
+
+
+packet_sniffer(options.interface)

