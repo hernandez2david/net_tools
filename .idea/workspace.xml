@@ -13,12 +13,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZKPAz7bIdvFUaEXbfEqnhD6yM5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -37,13 +39,19 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="193" y="27" width="1012" height="636" key="SettingsEditor" timestamp="1584757238969">
-      <screen x="42" y="27" width="1324" height="636" />
+    <state x="323" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585445399572">
+      <screen x="50" y="27" width="1630" height="918" />
+    </state>
+    <state x="323" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.27.1630.918@50.27.1630.918" timestamp="1585445399572" />
+    <state x="236" y="27" width="1022" height="732" key="SettingsEditor" timestamp="1585446372224">
+      <screen x="50" y="27" width="1630" height="918" />
     </state>
     <state x="193" y="27" width="1012" height="636" key="SettingsEditor/42.27.1324.636@42.27.1324.636" timestamp="1584757238969" />
-    <state x="364" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1584935970837">
-      <screen x="42" y="27" width="1324" height="636" />
+    <state x="236" y="27" width="1022" height="732" key="SettingsEditor/50.27.1630.918@50.27.1630.918" timestamp="1585446372224" />
+    <state x="446" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585454079944">
+      <screen x="50" y="27" width="1630" height="918" />
     </state>
     <state x="364" y="172" key="com.intellij.ide.util.TipDialog/42.27.1324.636@42.27.1324.636" timestamp="1584935970837" />
+    <state x="446" y="236" key="com.intellij.ide.util.TipDialog/50.27.1630.918@50.27.1630.918" timestamp="1585454079944" />
   </component>
 </project>
