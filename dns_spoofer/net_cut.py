@@ -1,10 +1,15 @@
 #! usr/bin/env/python
-from scapy.all import *
 from netfilterqueue import NetfilterQueue
+import scapy.all as scapy
 
-def process_packet(packet):
-    print(packet)
+def print_and_accept(pkt):
+    scapy_packet = scapy.IP(pkt.get_payload())
+    print (scapy_packet.show())
+    pkt.accept()
 
 nfqueue = NetfilterQueue()
-nfqueue.bind(0, process_packet)
-nfqueue.run()
+nfqueue.bind(1, print_and_accept)
+try:
+    nfqueue.run()
+except KeyboardInterrupt:
+    print
