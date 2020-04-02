@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf4379f4-b0a9-4a13-b8a3-1ee634944b2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dns_spoofer/net_cut.py" beforeDir="false" afterPath="$PROJECT_DIR$/dns_spoofer/net_cut.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dns_spoofer/dns_spoof.py" beforeDir="false" afterPath="$PROJECT_DIR$/dns_spoofer/dns_spoof.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +50,10 @@
     </state>
     <state x="193" y="27" width="1012" height="636" key="SettingsEditor/42.27.1324.636@42.27.1324.636" timestamp="1584757238969" />
     <state x="236" y="27" width="1022" height="732" key="SettingsEditor/50.27.1630.918@50.27.1630.918" timestamp="1585446372224" />
-    <state x="446" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585454079944">
+    <state x="446" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585781145763">
       <screen x="50" y="27" width="1630" height="918" />
     </state>
     <state x="364" y="172" key="com.intellij.ide.util.TipDialog/42.27.1324.636@42.27.1324.636" timestamp="1584935970837" />
-    <state x="446" y="236" key="com.intellij.ide.util.TipDialog/50.27.1630.918@50.27.1630.918" timestamp="1585454079944" />
+    <state x="446" y="236" key="com.intellij.ide.util.TipDialog/50.27.1630.918@50.27.1630.918" timestamp="1585781145763" />
   </component>
 </project>
