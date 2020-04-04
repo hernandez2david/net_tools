@@ -8,11 +8,8 @@ def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     ethernet_frame = broadcast/arp_request
-    try:
-        answered = scapy.srp(ethernet_frame,timeout = 1, verbose = False)[0]
-        return answered[0][1].hwsrc
-    except IndexError:
-	print("[+]Restarting program")	
+    answered = scapy.srp(ethernet_frame,timeout = 1, verbose = False)[0
+    return answered[0][1].hwsrc
 
 def restore(ip_source, ip_destination):
     mac_destination = get_mac(ip_destination)
