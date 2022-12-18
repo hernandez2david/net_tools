@@ -1,0 +1,23 @@
+#Source
+#https://www.neuralnine.com/wp-content/uploads/2019/03/portscanner_neuralnine.pdf
+
+#target for testing
+#http://scanme.nmap.org/
+
+import socket
+
+
+def portscan(port):
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((target_host, port))
+        return True
+    except:
+        return False
+
+
+for i in range(1010):
+    open = (portscan(i)) == True
+    if open is True:
+        port = str(i)    
+        print("port "+ port + " is" + " open")
